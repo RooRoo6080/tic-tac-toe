@@ -10,15 +10,18 @@ class GamePage extends StatefulWidget {
 class _GamePageState extends State<GamePage> {
   List<String> values = [
     '',
+    'X',
     '',
     '',
-    '',
-    '',
-    '',
+    'O',
+    'X',
     '',
     '',
     '',
   ];
+  int count = 0;
+  List<List<int>> waysToWin = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]];
+  bool close = false;
 
   @override
   Widget build(BuildContext context) {
@@ -40,17 +43,17 @@ class _GamePageState extends State<GamePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[0] != '' ? null : (){},
                   child: Text(values[0]),
                 ),
                 const SizedBox(width: 10),
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[1] != '' ? null : (){},
                   child: Text(values[1]),
                 ),
                 const SizedBox(width: 10),
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[2] != '' ? null : (){},
                   child: Text(values[2]),
                 ),
               ],
@@ -60,17 +63,17 @@ class _GamePageState extends State<GamePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[3] != '' ? null : (){},
                   child: Text(values[3]),
                 ),
                 const SizedBox(width: 10),
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[4] != '' ? null : (){},
                   child: Text(values[4]),
                 ),
                 const SizedBox(width: 10),
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[5] != '' ? null : (){},
                   child: Text(values[5]),
                 ),
               ],
@@ -80,17 +83,17 @@ class _GamePageState extends State<GamePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[6] != '' ? null : (){},
                   child: Text(values[6]),
                 ),
                 const SizedBox(width: 10),
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[7] != '' ? null : (){},
                   child: Text(values[7]),
                 ),
                 const SizedBox(width: 10),
                 FloatingActionButton.large(
-                  onPressed: () {},
+                  onPressed: values[8] != '' ? null : (){},
                   child:Text(values[8]),
                 ),
               ],
