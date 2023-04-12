@@ -20,13 +20,13 @@ class AboutPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             Text(
-              'Hello World',
+              'Tic-Tac-Toe',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit'),
+            Text('This app is entirely built on Flutter. It\'s basically what I\'m using to learn the framework.'),
           ],
         ),
       ),
