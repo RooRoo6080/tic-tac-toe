@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/about_page.dart';
 import 'package:tic_tac_toe/game_page.dart';
-import 'package:tic_tac_toe/settings_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -38,20 +37,6 @@ class HomePage extends StatelessWidget {
             },
             icon: const Icon(Icons.info),
             label: const Text('About'),
-          ),
-          const SizedBox(height: 10),
-          ElevatedButton.icon(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (BuildContext context) {
-                    return const SettingsPage();
-                  },
-                ),
-              );
-            },
-            icon: const Icon(Icons.settings),
-            label: const Text('Settings'),
           ),
         ],
       ),
